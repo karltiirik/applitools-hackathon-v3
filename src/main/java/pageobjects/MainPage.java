@@ -1,7 +1,6 @@
 package pageobjects;
 
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -20,9 +19,9 @@ public class MainPage {
         return this;
     }
 
-    public MainPage selectProduct(String productName){
+    public MainPage selectProduct(String productName) {
         $(byText(productName)).click();
-        return  this;
+        return this;
     }
 
     public enum Color {
